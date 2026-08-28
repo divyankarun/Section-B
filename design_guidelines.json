@@ -1,0 +1,94 @@
+{
+  "project_name": "SECTION-B COFFEE & EATERY",
+  "theme": "dark-green-and-cream-editorial",
+  "typography": {
+    "primary_font": "Anton",
+    "secondary_font": "Manrope",
+    "rules": {
+      "headings": "MUST use Anton. Apply `tracking-normal` or `tracking-tight` (Anton is inherently condensed). MUST use uppercase for all H1/H2. Avoid generic sans-serif for any large display text.",
+      "body": "MUST use Manrope. Use `tracking-wide` for small labels, `leading-relaxed` for paragraphs.",
+      "hierarchy": {
+        "h1": "text-[12vw] sm:text-8xl md:text-9xl leading-[0.85] uppercase",
+        "h2": "text-5xl md:text-7xl leading-none uppercase",
+        "h3": "text-3xl md:text-4xl leading-tight uppercase",
+        "body": "text-base md:text-lg",
+        "labels": "text-xs md:text-sm uppercase tracking-[0.15em] font-bold"
+      }
+    }
+  },
+  "colors": {
+    "background": "#F4EFE6",
+    "foreground": "#0E3B2C",
+    "primary_dark": "#0E3B2C",
+    "primary_light": "#F4EFE6",
+    "accent_red": "#D93A3A",
+    "accent_matcha": "#A8C686",
+    "accent_orange": "#E07B2F",
+    "rules": "Strict adherence to the provided palette. Do NOT introduce generic blacks (#000) or pure whites (#FFF). The dominant background MUST be #F4EFE6 (Cream) with #0E3B2C (Forest Green) text, or inverted for high-impact sections (Green bg, Cream text). Use Red and Orange strictly for hover states, badges, price tags, or CTA buttons to make them pop."
+  },
+  "layout_and_grids": {
+    "container": "w-full max-w-none overflow-hidden",
+    "spacing": "Use generous padding: py-24 md:py-32 for sections. Avoid tight, cluttered layouts.",
+    "bento_grid": "For the menu or gallery, use an asymmetrical bento grid. Example: `grid-cols-1 md:grid-cols-12 gap-4 md:gap-8`. Span items irregularly (e.g., col-span-8, col-span-4) to create tension.",
+    "borders": "Use 1px solid borders (`border-[#0E3B2C]`) to create an editorial, newspaper-like structure for the menu and footer."
+  },
+  "visual_enhancers": {
+    "textures": "Apply a subtle SVG noise/grain overlay across the entire site to give it a tangible, printed-paper feel.",
+    "marquees": "MANDATORY: Use infinite scrolling marquees for section transitions or announcements (e.g., 'OUR DESSERT — Freshly Baked. Every Single Day.'). Use `react-fast-marquee`.",
+    "buttons": "Pill-shaped or sharp rectangular buttons. Solid background (Orange or Dark Green). MUST have magnetic hover effect (framer-motion) or strong color inversion on hover.",
+    "badges": "Use circular stamp-like badges for 'Best Seller' or 'Add Flavours @ ₹30'. Rotate them slightly (e.g., `-rotate-12`) for an urban/streetwear vibe."
+  },
+  "components_strategy": {
+    "navigation": "Sticky nav. Starts transparent, becomes solid cream or dark green on scroll. Large typography for links. Order Online CTA highlighted.",
+    "hero": "Split aesthetic or overlapping text. Massive 'SECTION-B' text behind the hero drink image. Line-by-line staggered reveal of the headline.",
+    "menu_section": "Categorized tabs (Cold Coffee, Hot Coffee, Food, Desserts). Use Shadcn Tabs but strip the default styling. Make it look like a printed menu board. Include dotted leaders for prices if possible, or bold alignment.",
+    "gallery_showcase": "Masonry layout or Framer Motion powered horizontal scroll carousel for packaging and cafe interior shots."
+  },
+  "motion_and_interactions": {
+    "scrolling": "MANDATORY: Use `@studio-freight/lenis` for smooth scrolling.",
+    "animations": "Use `framer-motion`. Staggered text reveals (line-by-line or word-by-word) for all H2s. Parallax effects on images during scroll. Clip-path reveals for section transitions.",
+    "hover": "Image scale-up on hover inside hidden overflow containers (`group-hover:scale-105`). Button text swap or fill animations."
+  },
+  "image_urls": {
+    "hero_drink": {
+      "url": "https://images.unsplash.com/photo-1717603545758-88cc454db69b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxsYXllcmVkJTIwaWNlZCUyMG1hdGNoYSUyMGRyaW5rfGVufDB8fHx8MTc4NzkzNjY4NHww&ixlib=rb-4.1.0&q=85",
+      "description": "Layered iced matcha drink representing the signature Strawberry Matcha."
+    },
+    "cafe_interior_1": {
+      "url": "https://images.unsplash.com/photo-1583354608715-177553a4035e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHw0fHxib3V0aXF1ZSUyMGNhZmUlMjBpbnRlcmlvcnxlbnwwfHx8fDE3ODc5MzY2ODR8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Boutique cafe interior with warm lighting for About/Story section."
+    },
+    "cafe_interior_2": {
+      "url": "https://images.unsplash.com/photo-1511081692775-05d0f180a065?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwxfHxib3V0aXF1ZSUyMGNhZmUlMjBpbnRlcmlvcnxlbnwwfHx8fDE3ODc5MzY2ODR8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Cafe counter and lights for Gallery."
+    },
+    "food_burger": {
+      "url": "https://images.unsplash.com/photo-1610440042657-612c34d95e9f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwYnVyZ2VyJTIwYW5kJTIwZnJpZXN8ZW58MHx8fHwxNzg3OTM2Njg0fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Gourmet burger for the Food menu visual."
+    },
+    "packaging_cup": {
+      "url": "https://images.unsplash.com/photo-1615485736894-a2d2e6d4cd9a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxzcGVjaWFsdHklMjBjb2ZmZWUlMjBjdXB8ZW58MHx8fHwxNzg3OTM2Njg0fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Minimalist specialty coffee cup for the Packaging Showcase."
+    },
+    "vibe_people": {
+      "url": "https://images.unsplash.com/photo-1485182708500-e8f1f318ba72?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwyfHxwZW9wbGUlMjBpbiUyMGNhZmV8ZW58MHx8fHwxNzg3OTM2Njg0fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Bustling cafe environment."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install and use 'lucide-react' for icons.",
+    "Install '@studio-freight/lenis' for smooth scrolling and initialize it in the main layout.",
+    "Install 'framer-motion' and use it extensively for scroll-triggered entrance animations.",
+    "Install 'react-fast-marquee' for the editorial ticker strips.",
+    "DO NOT use generic centered bootstrap-style layouts. Embrace asymmetry and print-editorial aesthetics.",
+    "Ensure all text contrasting against #0E3B2C or #F4EFE6 is highly legible. Use #D93A3A (Red) and #E07B2F (Orange) for striking accents only.",
+    "For the Menu section, implement a filtering system (Hot, Cold, Food, Desserts) with clear prices in ₹.",
+    "Include an Instagram order CTA linking to '@sectionb.in'.",
+    "Use standard semantic HTML/Tailwind for complex overlapping marketing layouts rather than fighting Shadcn layout components."
+  ],
+  "general_ui_ux_guidelines": {
+    "accessibility": "Ensure contrast ratios are met. Add aria-labels for all icon buttons.",
+    "testing": "All interactive and key informational elements MUST include a 'data-testid' attribute (e.g., data-testid='order-online-button').",
+    "responsive": "Mobile-first approach. Ensure massive typography scales down appropriately using fluid typography (e.g., text-[12vw] to clamp) or discrete Tailwind breakpoints so it doesn't break the viewport on small devices."
+  }
+}
