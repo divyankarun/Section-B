@@ -78,34 +78,15 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-3">
-            <Magnetic className="hidden sm:block">
+            <Magnetic>
               <a
                 data-testid="nav-zomato-button"
                 href={ZOMATO_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs uppercase tracking-[0.15em] font-bold border transition-colors duration-300 ${
-                  scrolled
-                    ? "border-forest/40 text-forest hover:bg-berry hover:border-berry hover:text-cream"
-                    : "border-cream/50 text-cream hover:bg-berry hover:border-berry"
-                }`}
+                className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-berry px-4 sm:px-5 py-2.5 text-[11px] sm:text-xs uppercase tracking-[0.12em] sm:tracking-[0.15em] font-bold text-cream transition-colors duration-300 hover:bg-cream hover:text-forest"
               >
-                <UtensilsCrossed size={14} /> Zomato
-              </a>
-            </Magnetic>
-            <Magnetic>
-              <a
-                data-testid="order-online-button"
-                href={INSTAGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs uppercase tracking-[0.15em] font-bold transition-colors duration-300 ${
-                  scrolled
-                    ? "bg-forest text-cream hover:bg-berry"
-                    : "bg-cream text-forest hover:bg-berry hover:text-cream"
-                }`}
-              >
-                <Instagram size={14} /> Order Online
+                <UtensilsCrossed size={14} /> Order on Zomato
               </a>
             </Magnetic>
             <button
