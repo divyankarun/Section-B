@@ -27,6 +27,7 @@ Build a premium, visually striking, Awwwards-level boutique brand website for Se
 - Footer: giant outline wordmark, links, socials
 - SEO: title, meta description, OG tags, alt text, semantic sections
 - Verified: backend endpoints via curl, contact form e2e (submission landed in DB), desktop + mobile screenshots, menu filtering
+- Hero rebuilt (2026-08-28) as a fully code-composed scene around the single product photo: morphing strawberry/matcha/tang color blobs, blurred color-wash duplicates of the cup image, dot-grid + diagonal-hairline depth layers, animated SVG steam, liquid-settle glow + ripple rings, drifting matcha flecks and coffee-bean silhouettes, cup load-in scale 1.15→1 with continuous float loop, tilted asymmetric crop, word-by-word kinetic headline (slide-up + fade), magnetic scale-hover CTAs
 
 ## Backlog
 - P1: Admin view for contact messages (currently GET endpoint only)

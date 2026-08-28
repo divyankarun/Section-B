@@ -125,4 +125,35 @@
     .map-toned {
         filter: grayscale(1) sepia(0.25) hue-rotate(90deg) saturate(0.7) contrast(1.02);
     }
+    @keyframes blob-morph {
+        0%, 100% {
+            border-radius: 58% 42% 55% 45% / 45% 55% 42% 58%;
+        }
+        33% {
+            border-radius: 45% 55% 60% 40% / 55% 40% 60% 45%;
+        }
+        66% {
+            border-radius: 52% 48% 40% 60% / 48% 60% 45% 55%;
+        }
+    }
+    .hero-blob {
+        animation: blob-morph 16s ease-in-out infinite;
+        filter: blur(90px);
+        pointer-events: none;
+    }
+    .hero-dots {
+        background-image: radial-gradient(circle, rgba(244, 239, 230, 0.09) 1px, transparent 1px);
+        background-size: 26px 26px;
+        mask-image: radial-gradient(ellipse at 30% 40%, black 30%, transparent 75%);
+        -webkit-mask-image: radial-gradient(ellipse at 30% 40%, black 30%, transparent 75%);
+    }
+    .hero-lines {
+        background-image: repeating-linear-gradient(
+            -55deg,
+            transparent 0px,
+            transparent 90px,
+            rgba(244, 239, 230, 0.035) 90px,
+            rgba(244, 239, 230, 0.035) 91px
+        );
+    }
 }
