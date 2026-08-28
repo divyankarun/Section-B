@@ -1,9 +1,9 @@
 import { useMemo, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowDown, Coffee, Instagram } from "lucide-react";
+import { ArrowDown, Coffee, Instagram, UtensilsCrossed } from "lucide-react";
 import Marquee from "react-fast-marquee";
 import { Magnetic, RotatingStamp, EASE } from "./anim";
-import { IMAGES, INSTAGRAM_URL, MARQUEE_ITEMS } from "../data/content";
+import { IMAGES, INSTAGRAM_URL, MARQUEE_ITEMS, ZOMATO_URL } from "../data/content";
 import { scrollToSection } from "./Navbar";
 
 const WordLine = ({ words, baseDelay = 0, className = "" }) => (
@@ -199,6 +199,19 @@ const Hero = () => {
             </Magnetic>
             <Magnetic>
               <motion.a
+                data-testid="hero-zomato-button"
+                href={ZOMATO_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.96 }}
+                className="inline-flex items-center gap-2 rounded-full bg-berry px-7 py-3.5 text-xs uppercase tracking-[0.18em] font-bold text-cream transition-colors duration-300 hover:bg-cream hover:text-forest"
+              >
+                <UtensilsCrossed size={15} /> Zomato
+              </motion.a>
+            </Magnetic>
+            <Magnetic>
+              <motion.a
                 data-testid="hero-order-button"
                 href={INSTAGRAM_URL}
                 target="_blank"
@@ -207,7 +220,7 @@ const Hero = () => {
                 whileTap={{ scale: 0.96 }}
                 className="inline-flex items-center gap-2 rounded-full border border-cream/50 px-7 py-3.5 text-xs uppercase tracking-[0.18em] font-bold transition-colors duration-300 hover:bg-cream hover:text-forest"
               >
-                <Instagram size={15} /> Order Now
+                <Instagram size={15} /> Instagram
               </motion.a>
             </Magnetic>
           </motion.div>

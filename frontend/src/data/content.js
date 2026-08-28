@@ -1,4 +1,5 @@
 export const INSTAGRAM_URL = "https://www.instagram.com/sectionb.in/";
+export const ZOMATO_URL = "https://zomato.onelink.me/xqzv/ldv1ek8l";
 
 export const IMAGES = {
   heroCup: "/assets/hero-matcha.jpeg",

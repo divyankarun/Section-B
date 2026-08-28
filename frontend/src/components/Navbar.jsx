@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Instagram, Menu as MenuIcon, X } from "lucide-react";
+import { Instagram, Menu as MenuIcon, UtensilsCrossed, X } from "lucide-react";
 import { Magnetic, EASE } from "./anim";
-import { INSTAGRAM_URL } from "../data/content";
+import { INSTAGRAM_URL, ZOMATO_URL } from "../data/content";
 
 const LINKS = [
   { label: "Story", href: "#story" },
@@ -78,6 +78,21 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-3">
+            <Magnetic className="hidden sm:block">
+              <a
+                data-testid="nav-zomato-button"
+                href={ZOMATO_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs uppercase tracking-[0.15em] font-bold border transition-colors duration-300 ${
+                  scrolled
+                    ? "border-forest/40 text-forest hover:bg-berry hover:border-berry hover:text-cream"
+                    : "border-cream/50 text-cream hover:bg-berry hover:border-berry"
+                }`}
+              >
+                <UtensilsCrossed size={14} /> Zomato
+              </a>
+            </Magnetic>
             <Magnetic>
               <a
                 data-testid="order-online-button"
@@ -137,15 +152,24 @@ const Navbar = () => {
                 </div>
               ))}
             </div>
-            <div className="px-8 pb-10">
+            <div className="px-8 pb-10 flex flex-wrap gap-3">
+              <a
+                data-testid="nav-mobile-zomato"
+                href={ZOMATO_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-berry px-6 py-3 text-sm uppercase tracking-[0.15em] font-bold"
+              >
+                <UtensilsCrossed size={16} /> Order on Zomato
+              </a>
               <a
                 data-testid="nav-mobile-order"
                 href={INSTAGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-berry px-6 py-3 text-sm uppercase tracking-[0.15em] font-bold"
+                className="inline-flex items-center gap-2 rounded-full border border-cream/50 px-6 py-3 text-sm uppercase tracking-[0.15em] font-bold"
               >
-                <Instagram size={16} /> Order via Instagram
+                <Instagram size={16} /> Instagram
               </a>
             </div>
           </motion.div>

@@ -34,7 +34,7 @@ Build a premium, visually striking, Awwwards-level boutique brand website for Se
 - P1: Email notifications via Resend when contact form is submitted
 - P2: Real Instagram feed embed in Gallery
 - P2: Full menu data for every board item (food categories beyond the 12 highlighted)
-- P2: Delivery-platform deep links (Swiggy/Zomato) when available
+- P2: Delivery-platform deep links (Swiggy/Zomato) when available — DONE (2026-08-28): Zomato one-tap order links added to navbar, hero CTAs, mobile menu, and footer (https://zomato.onelink.me/xqzv/ldv1ek8l). Swiggy link pending if needed
 
 ## Test Credentials
 No authentication in this app. See /app/memory/test_credentials.md.

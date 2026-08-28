@@ -1,6 +1,6 @@
-import { Instagram, MapPin, Clock } from "lucide-react";
+import { Instagram, MapPin, Clock, UtensilsCrossed } from "lucide-react";
 import { Reveal } from "./anim";
-import { ADDRESS, INSTAGRAM_URL } from "../data/content";
+import { ADDRESS, INSTAGRAM_URL, ZOMATO_URL } from "../data/content";
 import { scrollToSection } from "./Navbar";
 
 const Footer = () => (
@@ -53,6 +53,15 @@ const Footer = () => (
             className="group inline-flex items-center gap-2 text-sm text-cream/70 hover:text-berry transition-colors duration-300"
           >
             <Instagram size={16} className="transition-transform duration-300 group-hover:-rotate-12" /> @sectionb.in
+          </a>
+          <a
+            data-testid="footer-zomato-link"
+            href={ZOMATO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group mt-2 inline-flex items-center gap-2 text-sm text-cream/70 hover:text-berry transition-colors duration-300"
+          >
+            <UtensilsCrossed size={16} className="transition-transform duration-300 group-hover:-rotate-12" /> Order on Zomato
           </a>
         </div>
       </div>
