@@ -29,6 +29,8 @@ Build a premium, visually striking, Awwwards-level boutique brand website for Se
 - Verified: backend endpoints via curl, contact form e2e (submission landed in DB), desktop + mobile screenshots, menu filtering
 - Hero rebuilt (2026-08-28) as a fully code-composed scene around the single product photo: morphing strawberry/matcha/tang color blobs, blurred color-wash duplicates of the cup image, dot-grid + diagonal-hairline depth layers, animated SVG steam, liquid-settle glow + ripple rings, drifting matcha flecks and coffee-bean silhouettes, cup load-in scale 1.15→1 with continuous float loop, tilted asymmetric crop, word-by-word kinetic headline (slide-up + fade), magnetic scale-hover CTAs
 
+- Order Strip DONE (2026-08-28): slim sticky bottom bar appears after scrolling past the hero — "Open till 11 PM" micro-copy, red Order Now (Zomato) pill + Instagram icon button, magnetic hovers, slide-up spring animation, mobile-optimised
+
 ## Backlog
 - P1: Admin view for contact messages (currently GET endpoint only)
 - P1: Email notifications via Resend when contact form is submitted

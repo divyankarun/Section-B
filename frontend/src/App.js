@@ -3,6 +3,7 @@ import Lenis from "lenis";
 import { Toaster } from "@/components/ui/sonner";
 import "@/App.css";
 import Navbar from "@/components/Navbar";
+import OrderStrip from "@/components/OrderStrip";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import MenuSection from "@/components/MenuSection";
@@ -34,6 +35,7 @@ function App() {
     <div className="App bg-cream text-forest font-body">
       <div className="grain-overlay" aria-hidden="true" />
       <Navbar />
+      <OrderStrip />
       <main>
         <Hero />
         <About />
